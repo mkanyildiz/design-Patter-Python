@@ -1,0 +1,6 @@
+# coding=utf-8
+from factory.Button import Button
+
+
+class Image(Button):
+    html = "<img></img>"
