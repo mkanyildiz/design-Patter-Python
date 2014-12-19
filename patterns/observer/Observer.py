@@ -5,15 +5,15 @@ __author__ = 'mwech'
 
 class Thermometer(AbstractThermometer):
 
-    old_state = 0
-    new_state = 0
+    old_temperatur = 0.0
+    new_temperatur = 0.0
     thermometerID = 0
 
     def set_thermometerID(self, thermometerID):
         self.thermometerID = thermometerID
 
-    def handle_state_change(self):
-        self.old_state = self.new_state
-        self.new_state = self.subject.get_state()
-        print("Observer #%d: State Changed in Subject from '%s' to '%s'." % (self.thermometerID, self.old_state, self.new_state))
+    def handle_temperatur_update(self):
+        self.old_temperatur = self.new_temperatur
+        self.new_temperatur = self.wetterstation.get_temperatur()
+        print("Thermometer %d: Ursprüngliche Temperatur: '%s' jetzt: '%s'." % (self.thermometerID, self.old_temperatur, self.new_temperatur))
 

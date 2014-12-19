@@ -5,5 +5,5 @@ __author__ = 'mwech'
 
 class Wetterstation(AbstractWetterstation):
 
-    def show_state(self):
-        print("Subject: Current State = %s"  (self.state))
+    def show_temperatur(self):
+        print("Wetterstation: Derzeitige Temperatur: = %s"  (self.temperatur))

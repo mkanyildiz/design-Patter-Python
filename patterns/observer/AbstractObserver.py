@@ -4,17 +4,17 @@ __author__ = 'mwech'
 class AbstractThermometer:
     __metaclass__ = ABCMeta
 
-    subject = 0
+    wetterstation = 0
 
-    def __init__(self, obj):
-        self.subject = obj.register(self)
+    def __init__(self, objekt):
+        self.wetterstation = objekt.registriereThermometer(self)
 
-    def set_state(self, new_state):
-        self.subject.set_state(new_state)
+    def set_temperatur(self, new_temperatur):
+        self.wetterstation.set_temperatur(new_temperatur)
 
     def update(self):
-        self.handle_state_change()
+        self.handle_temperatur_update()
 
     @abstractmethod
-    def handle_state_change(self):
+    def handle_temperatur_update(self):
         raise NotImplementedError()

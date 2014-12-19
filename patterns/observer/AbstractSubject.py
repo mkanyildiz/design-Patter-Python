@@ -4,24 +4,24 @@ __author__ = 'mwech'
 class AbstractWetterstation:
     __metaclass__ = ABCMeta
 
-    observers = []
-    state = 0
+    thermometer = []
+    temperatur = 0
 
     def __init__(self):
-        self.observers = []
-        self.state = 0
+        self.thermometer = []
+        self.temperatur = 0
 
-    def register(self, observer):
-        self.observers.append(observer)
+    def registriereThermometer(self, thermometer):
+        self.thermometer.append(thermometer)
         return self
 
-    def set_state(self, new_state):
-        self.state = new_state
+    def set_temperatur(self, new_temperatur):
+        self.temperatur = new_temperatur
         self.notify()
 
-    def get_state(self):
-        return self.state
+    def get_temperatur(self):
+        return self.temperatur
 
     def notify(self):
-        for observer in self.observers:
-            observer.update()
+        for thermometer in self.thermometer:
+            thermometer.update()
