@@ -1,5 +1,11 @@
+import abc
+
 __author__ = 'Muhammed5'
 
 class FlyBehavior():
-    def __init__(self):
-        pass
+    __metaclass__ = abc.ABCMeta
+
+    @abc.abstractmethod
+    def fly(self):
+        """Method documentation"""
+        return

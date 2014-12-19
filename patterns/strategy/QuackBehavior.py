@@ -1,5 +1,9 @@
 __author__ = 'Muhammed5'
-
+import abc
 class QuackBehavior():
-    def __init__(self):
-        pass
+    __metaclass__ = abc.ABCMeta
+
+    @abc.abstractmethod
+    def quack(self):
+        """Method documentation"""
+        return
