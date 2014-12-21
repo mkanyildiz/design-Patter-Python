@@ -1,8 +1,3 @@
-# python
-
-################################################################################
-# Abstract Duck class and concrete Duck type classes.
-################################################################################
 from strategy.FlyNoWay import FlyNoWay
 from strategy.MuteQuack import MuteQuack
 
