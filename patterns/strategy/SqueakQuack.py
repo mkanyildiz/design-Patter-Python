@@ -1,4 +1,4 @@
-from strategy.QuackBehavior import QuackBehavior
+from patterns.strategy.QuackBehavior import QuackBehavior
 
 __author__ = 'Muhammed5'
 class SqueakQuack(QuackBehavior):

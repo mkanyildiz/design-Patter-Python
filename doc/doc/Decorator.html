@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Decorator Pattern &mdash; Python Design Patterns 20141222 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '20141222',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Python Design Patterns 20141222 documentation" href="index.html" />
+    <link rel="prev" title="Adapter" href="Adapter.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Adapter.html" title="Adapter"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Python Design Patterns 20141222 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="decorator-pattern">
+<h1>Decorator Pattern<a class="headerlink" href="#decorator-pattern" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="decorator">
+<h2>Decorator<a class="headerlink" href="#decorator" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.decorator.Decorator.Decorator">
+<em class="property">class </em><code class="descclassname">patterns.decorator.Decorator.</code><code class="descname">Decorator</code><span class="sig-paren">(</span><em>speise</em><span class="sig-paren">)</span><a class="headerlink" href="#patterns.decorator.Decorator.Decorator" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="patterns.decorator.Decorator.Decorator.getBezeichnung">
+<code class="descname">getBezeichnung</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.decorator.Decorator.Decorator.getBezeichnung" title="Permalink to this definition">¶</a></dt>
+<dd><p>Zurückliefern der Bezeichnung einer Speise
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="patterns.decorator.Decorator.Decorator.getPreis">
+<code class="descname">getPreis</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.decorator.Decorator.Decorator.getPreis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Zurückliefern des Preises einer Speise
+:return:</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="speise">
+<h2>Speise<a class="headerlink" href="#speise" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.decorator.Speise.Speise">
+<em class="property">class </em><code class="descclassname">patterns.decorator.Speise.</code><code class="descname">Speise</code><a class="headerlink" href="#patterns.decorator.Speise.Speise" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="patterns.decorator.Speise.Speise.getBezeichnung">
+<code class="descname">getBezeichnung</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.decorator.Speise.Speise.getBezeichnung" title="Permalink to this definition">¶</a></dt>
+<dd><p>Zurückgeben der Bezeichnung einer Speise
+:return: Klassenname</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="patterns.decorator.Speise.Speise.getPreis">
+<code class="descname">getPreis</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.decorator.Speise.Speise.getPreis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Zurückgeben des Preises einer Speise
+:return: Preis</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="wienerschnitzel">
+<h2>WienerSchnitzel<a class="headerlink" href="#wienerschnitzel" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.decorator.WienerSchnitzel.WienerSchnitzel">
+<em class="property">class </em><code class="descclassname">patterns.decorator.WienerSchnitzel.</code><code class="descname">WienerSchnitzel</code><a class="headerlink" href="#patterns.decorator.WienerSchnitzel.WienerSchnitzel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="fisch">
+<h2>Fisch<a class="headerlink" href="#fisch" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.decorator.Fisch.Fisch">
+<em class="property">class </em><code class="descclassname">patterns.decorator.Fisch.</code><code class="descname">Fisch</code><a class="headerlink" href="#patterns.decorator.Fisch.Fisch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="steak">
+<h2>Steak<a class="headerlink" href="#steak" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.decorator.Steak.Steak">
+<em class="property">class </em><code class="descclassname">patterns.decorator.Steak.</code><code class="descname">Steak</code><a class="headerlink" href="#patterns.decorator.Steak.Steak" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="salat">
+<h2>Salat<a class="headerlink" href="#salat" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.decorator.Salat.Salat">
+<em class="property">class </em><code class="descclassname">patterns.decorator.Salat.</code><code class="descname">Salat</code><span class="sig-paren">(</span><em>speise</em><span class="sig-paren">)</span><a class="headerlink" href="#patterns.decorator.Salat.Salat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="pommes">
+<h2>Pommes<a class="headerlink" href="#pommes" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.decorator.Pommes.Pommes">
+<em class="property">class </em><code class="descclassname">patterns.decorator.Pommes.</code><code class="descname">Pommes</code><span class="sig-paren">(</span><em>speise</em><span class="sig-paren">)</span><a class="headerlink" href="#patterns.decorator.Pommes.Pommes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="bratkartoffeln">
+<h2>Bratkartoffeln<a class="headerlink" href="#bratkartoffeln" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.decorator.Bratkartoffeln.Bratkartoffel">
+<em class="property">class </em><code class="descclassname">patterns.decorator.Bratkartoffeln.</code><code class="descname">Bratkartoffel</code><span class="sig-paren">(</span><em>speise</em><span class="sig-paren">)</span><a class="headerlink" href="#patterns.decorator.Bratkartoffeln.Bratkartoffel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Decorator Pattern</a><ul>
+<li><a class="reference internal" href="#decorator">Decorator</a></li>
+<li><a class="reference internal" href="#speise">Speise</a></li>
+<li><a class="reference internal" href="#wienerschnitzel">WienerSchnitzel</a></li>
+<li><a class="reference internal" href="#fisch">Fisch</a></li>
+<li><a class="reference internal" href="#steak">Steak</a></li>
+<li><a class="reference internal" href="#salat">Salat</a></li>
+<li><a class="reference internal" href="#pommes">Pommes</a></li>
+<li><a class="reference internal" href="#bratkartoffeln">Bratkartoffeln</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Adapter.html"
+                        title="previous chapter">Adapter</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Decorator.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Adapter.html" title="Adapter"
+             >previous</a> |</li>
+        <li><a href="index.html">Python Design Patterns 20141222 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2014, Kanyildiz, Wech.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3b2.
+    </div>
+  </body>
+</html>

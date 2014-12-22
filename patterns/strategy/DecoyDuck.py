@@ -1,7 +1,7 @@
-from strategy.FlyNoWay import FlyNoWay
-from strategy.MuteQuack import MuteQuack
+from patterns.strategy.Duck import Duck
+from patterns.strategy.FlyNoWay import FlyNoWay
+from patterns.strategy.MuteQuack import MuteQuack
 
-from strategy.Duck import Duck
 
 class DecoyDuck(Duck):
     """

@@ -1,9 +1,9 @@
 # coding=utf-8
-from factory.GtkUIFactory import GtkUIFactory
-from factory.QtUIFactory import QtUIFactory
+from patterns.factory.GtkUIFactory import GtkUIFactory
+from patterns.factory.QtUIFactory import QtUIFactory
 
 
-class test:
+class main:
     """
     test
     """

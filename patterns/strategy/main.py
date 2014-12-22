@@ -1,7 +1,8 @@
 # coding=utf-8
-from strategy.DecoyDuck import DecoyDuck
-from strategy.MallardDuck import MallardDuck
-from strategy.ModelDuck import ModelDuck
+from patterns.strategy.DecoyDuck import DecoyDuck
+from patterns.strategy.MallardDuck import MallardDuck
+from patterns.strategy.ModelDuck import ModelDuck
+
 
 class main():
     """

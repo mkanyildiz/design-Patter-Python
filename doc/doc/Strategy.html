@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Strategy &mdash; Python Design Patterns 20141222 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '20141222',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Python Design Patterns 20141222 documentation" href="index.html" />
+    <link rel="next" title="Adapter" href="Adapter.html" />
+    <link rel="prev" title="Factory" href="Factory.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Adapter.html" title="Adapter"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Factory.html" title="Factory"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Python Design Patterns 20141222 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="strategy">
+<h1>Strategy<a class="headerlink" href="#strategy" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="decoyduck">
+<h2>DecoyDuck<a class="headerlink" href="#decoyduck" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.strategy.DecoyDuck.DecoyDuck">
+<em class="property">class </em><code class="descclassname">patterns.strategy.DecoyDuck.</code><code class="descname">DecoyDuck</code><a class="headerlink" href="#patterns.strategy.DecoyDuck.DecoyDuck" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>Duck</strong> &#8211; Reference of the class Duck</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="duck">
+<h2>Duck<a class="headerlink" href="#duck" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="flya">
+<h2>Flya<a class="headerlink" href="#flya" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.strategy.Fly.Fly">
+<em class="property">class </em><code class="descclassname">patterns.strategy.Fly.</code><code class="descname">Fly</code><a class="headerlink" href="#patterns.strategy.Fly.Fly" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>FlyBehavior</strong> &#8211; reference of the FlyBehavior class</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="patterns.strategy.Fly.Fly.fly">
+<code class="descname">fly</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.strategy.Fly.Fly.fly" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">nothing just printing out the result</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="flybehavior">
+<h2>FlyBehavior<a class="headerlink" href="#flybehavior" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.strategy.FlyBehavior.FlyBehavior">
+<em class="property">class </em><code class="descclassname">patterns.strategy.FlyBehavior.</code><code class="descname">FlyBehavior</code><a class="headerlink" href="#patterns.strategy.FlyBehavior.FlyBehavior" title="Permalink to this definition">¶</a></dt>
+<dd><p>:param:nothing</p>
+<dl class="method">
+<dt id="patterns.strategy.FlyBehavior.FlyBehavior.fly">
+<code class="descname">fly</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.strategy.FlyBehavior.FlyBehavior.fly" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">is empty</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="flynoway">
+<h2>FlyNoWay<a class="headerlink" href="#flynoway" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.strategy.FlyNoWay.FlyNoWay">
+<em class="property">class </em><code class="descclassname">patterns.strategy.FlyNoWay.</code><code class="descname">FlyNoWay</code><a class="headerlink" href="#patterns.strategy.FlyNoWay.FlyNoWay" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>FlyBehavior</strong> &#8211; reference of the class FlyBehavior</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="patterns.strategy.FlyNoWay.FlyNoWay.fly">
+<code class="descname">fly</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.strategy.FlyNoWay.FlyNoWay.fly" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">jsut printing our the result</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="flyrocketpowered">
+<h2>FlyRocketPowered<a class="headerlink" href="#flyrocketpowered" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.strategy.FlyRocketPowered.FlyRocketPowered">
+<em class="property">class </em><code class="descclassname">patterns.strategy.FlyRocketPowered.</code><code class="descname">FlyRocketPowered</code><a class="headerlink" href="#patterns.strategy.FlyRocketPowered.FlyRocketPowered" title="Permalink to this definition">¶</a></dt>
+<dd><p>:param FlyBehavior:reference variable of the FlyBehavior class</p>
+<dl class="method">
+<dt id="patterns.strategy.FlyRocketPowered.FlyRocketPowered.fly">
+<code class="descname">fly</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.strategy.FlyRocketPowered.FlyRocketPowered.fly" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">printing out the result</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="main">
+<h2>main<a class="headerlink" href="#main" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.strategy.main.main">
+<em class="property">class </em><code class="descclassname">patterns.strategy.main.</code><code class="descname">main</code><a class="headerlink" href="#patterns.strategy.main.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>main class</p>
+</dd></dl>
+
+</div>
+<div class="section" id="mallardduck">
+<h2>MallardDuck<a class="headerlink" href="#mallardduck" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.strategy.MallardDuck.MallardDuck">
+<em class="property">class </em><code class="descclassname">patterns.strategy.MallardDuck.</code><code class="descname">MallardDuck</code><a class="headerlink" href="#patterns.strategy.MallardDuck.MallardDuck" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>Duck</strong> &#8211; reference of the Duck class</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="modelduck">
+<h2>ModelDuck<a class="headerlink" href="#modelduck" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.strategy.ModelDuck.ModelDuck">
+<em class="property">class </em><code class="descclassname">patterns.strategy.ModelDuck.</code><code class="descname">ModelDuck</code><a class="headerlink" href="#patterns.strategy.ModelDuck.ModelDuck" title="Permalink to this definition">¶</a></dt>
+<dd><p>:param Duck:reference of the Duck class</p>
+</dd></dl>
+
+</div>
+<div class="section" id="mutequack">
+<h2>MuteQuack<a class="headerlink" href="#mutequack" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.strategy.MuteQuack.MuteQuack">
+<em class="property">class </em><code class="descclassname">patterns.strategy.MuteQuack.</code><code class="descname">MuteQuack</code><a class="headerlink" href="#patterns.strategy.MuteQuack.MuteQuack" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>QuackBehavior</strong> &#8211; reference of a class</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="patterns.strategy.MuteQuack.MuteQuack.quack">
+<code class="descname">quack</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.strategy.MuteQuack.MuteQuack.quack" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">just printing out the result</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="quack">
+<h2>Quack<a class="headerlink" href="#quack" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.strategy.Quack.Quack">
+<em class="property">class </em><code class="descclassname">patterns.strategy.Quack.</code><code class="descname">Quack</code><a class="headerlink" href="#patterns.strategy.Quack.Quack" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>QuackBehavior</strong> &#8211; reference of the QuackBehavior class</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="patterns.strategy.Quack.Quack.quack">
+<code class="descname">quack</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.strategy.Quack.Quack.quack" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">just printing out the result</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="quackbehavior">
+<h2>QuackBehavior<a class="headerlink" href="#quackbehavior" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.strategy.QuackBehavior.QuackBehavior">
+<em class="property">class </em><code class="descclassname">patterns.strategy.QuackBehavior.</code><code class="descname">QuackBehavior</code><a class="headerlink" href="#patterns.strategy.QuackBehavior.QuackBehavior" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="patterns.strategy.QuackBehavior.QuackBehavior.quack">
+<code class="descname">quack</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.strategy.QuackBehavior.QuackBehavior.quack" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">empty</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="squeakquack">
+<h2>SqueakQuack<a class="headerlink" href="#squeakquack" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.strategy.SqueakQuack.SqueakQuack">
+<em class="property">class </em><code class="descclassname">patterns.strategy.SqueakQuack.</code><code class="descname">SqueakQuack</code><a class="headerlink" href="#patterns.strategy.SqueakQuack.SqueakQuack" title="Permalink to this definition">¶</a></dt>
+<dd><p>SqueekQuack
+:param QuackBehavior: referecne of the class QuackBehavior</p>
+<dl class="method">
+<dt id="patterns.strategy.SqueakQuack.SqueakQuack.quack">
+<code class="descname">quack</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.strategy.SqueakQuack.SqueakQuack.quack" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">printing some data</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Strategy</a><ul>
+<li><a class="reference internal" href="#decoyduck">DecoyDuck</a></li>
+<li><a class="reference internal" href="#duck">Duck</a></li>
+<li><a class="reference internal" href="#flya">Flya</a></li>
+<li><a class="reference internal" href="#flybehavior">FlyBehavior</a></li>
+<li><a class="reference internal" href="#flynoway">FlyNoWay</a></li>
+<li><a class="reference internal" href="#flyrocketpowered">FlyRocketPowered</a></li>
+<li><a class="reference internal" href="#main">main</a></li>
+<li><a class="reference internal" href="#mallardduck">MallardDuck</a></li>
+<li><a class="reference internal" href="#modelduck">ModelDuck</a></li>
+<li><a class="reference internal" href="#mutequack">MuteQuack</a></li>
+<li><a class="reference internal" href="#quack">Quack</a></li>
+<li><a class="reference internal" href="#quackbehavior">QuackBehavior</a></li>
+<li><a class="reference internal" href="#squeakquack">SqueakQuack</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Factory.html"
+                        title="previous chapter">Factory</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Adapter.html"
+                        title="next chapter">Adapter</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Strategy.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Adapter.html" title="Adapter"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Factory.html" title="Factory"
+             >previous</a> |</li>
+        <li><a href="index.html">Python Design Patterns 20141222 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2014, Kanyildiz, Wech.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3b2.
+    </div>
+  </body>
+</html>

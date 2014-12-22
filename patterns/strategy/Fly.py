@@ -1,4 +1,4 @@
-from strategy.FlyBehavior import FlyBehavior
+from patterns.strategy.FlyBehavior import FlyBehavior
 
 __author__ = 'Muhammed5'
 class Fly(FlyBehavior):

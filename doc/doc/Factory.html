@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Factory &mdash; Python Design Patterns 20141222 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '20141222',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Python Design Patterns 20141222 documentation" href="index.html" />
+    <link rel="prev" title="Observer Pattern" href="Observer.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Observer.html" title="Observer Pattern"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Python Design Patterns 20141222 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="factory">
+<h1>Factory<a class="headerlink" href="#factory" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="window">
+<h2>Window<a class="headerlink" href="#window" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.factory.Window.Window">
+<em class="property">class </em><code class="descclassname">patterns.factory.Window.</code><code class="descname">Window</code><span class="sig-paren">(</span><em>toolkit</em>, <em>purpose</em><span class="sig-paren">)</span><a class="headerlink" href="#patterns.factory.Window.Window" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="patterns.factory.Window.Window.getToolkit">
+<code class="descname">getToolkit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.factory.Window.Window.getToolkit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">toolkit</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="patterns.factory.Window.Window.getType">
+<code class="descname">getType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.factory.Window.Window.getType" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">__purpose</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="uifactory">
+<h2>UIFactory<a class="headerlink" href="#uifactory" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.factory.UIFactory.UIFactory">
+<em class="property">class </em><code class="descclassname">patterns.factory.UIFactory.</code><code class="descname">UIFactory</code><a class="headerlink" href="#patterns.factory.UIFactory.UIFactory" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="patterns.factory.UIFactory.UIFactory.getLayersWindow">
+<code class="descname">getLayersWindow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.factory.UIFactory.UIFactory.getLayersWindow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">nothing</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="patterns.factory.UIFactory.UIFactory.getMainWindow">
+<code class="descname">getMainWindow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.factory.UIFactory.UIFactory.getMainWindow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">nothing</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="patterns.factory.UIFactory.UIFactory.getToolboxWindow">
+<code class="descname">getToolboxWindow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.factory.UIFactory.UIFactory.getToolboxWindow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">nothing</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="qtuifactory">
+<h2>QtUIFactory<a class="headerlink" href="#qtuifactory" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.factory.QtUIFactory.QtUIFactory">
+<em class="property">class </em><code class="descclassname">patterns.factory.QtUIFactory.</code><code class="descname">QtUIFactory</code><a class="headerlink" href="#patterns.factory.QtUIFactory.QtUIFactory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>UIFactory</strong> &#8211; value</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="patterns.factory.QtUIFactory.QtUIFactory.getLayersWindow">
+<code class="descname">getLayersWindow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.factory.QtUIFactory.QtUIFactory.getLayersWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>:return QtLayersWindow()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="patterns.factory.QtUIFactory.QtUIFactory.getMainWindow">
+<code class="descname">getMainWindow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.factory.QtUIFactory.QtUIFactory.getMainWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>:return QtMainWindow()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="patterns.factory.QtUIFactory.QtUIFactory.getToolboxWindow">
+<code class="descname">getToolboxWindow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.factory.QtUIFactory.QtUIFactory.getToolboxWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>:return QtToolboxWindow()</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="qttoolboxfactory">
+<h2>QtToolboxFactory<a class="headerlink" href="#qttoolboxfactory" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.factory.QtToolboxWindow.QtToolboxWindow">
+<em class="property">class </em><code class="descclassname">patterns.factory.QtToolboxWindow.</code><code class="descname">QtToolboxWindow</code><a class="headerlink" href="#patterns.factory.QtToolboxWindow.QtToolboxWindow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>Window</strong> &#8211; reference of the class Window</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="qtmainfactory">
+<h2>QtMainFactory<a class="headerlink" href="#qtmainfactory" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.factory.QtMainWindow.QtMainWindow">
+<em class="property">class </em><code class="descclassname">patterns.factory.QtMainWindow.</code><code class="descname">QtMainWindow</code><a class="headerlink" href="#patterns.factory.QtMainWindow.QtMainWindow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>Window</strong> &#8211; reference of the class Window</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="qtlayerfactory">
+<h2>QtLayerFactory<a class="headerlink" href="#qtlayerfactory" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.factory.QtLayersWindow.QtLayersWindow">
+<em class="property">class </em><code class="descclassname">patterns.factory.QtLayersWindow.</code><code class="descname">QtLayersWindow</code><a class="headerlink" href="#patterns.factory.QtLayersWindow.QtLayersWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>qtLayersWindow
+:param Window: reference of the class Window</p>
+</dd></dl>
+
+</div>
+<div class="section" id="gtuifactory">
+<h2>GtUIFactory<a class="headerlink" href="#gtuifactory" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.factory.GtkUIFactory.GtkUIFactory">
+<em class="property">class </em><code class="descclassname">patterns.factory.GtkUIFactory.</code><code class="descname">GtkUIFactory</code><a class="headerlink" href="#patterns.factory.GtkUIFactory.GtkUIFactory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>UIFactory</strong> &#8211; reference of the class UIFactory</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="patterns.factory.GtkUIFactory.GtkUIFactory.getLayersWindow">
+<code class="descname">getLayersWindow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.factory.GtkUIFactory.GtkUIFactory.getLayersWindow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">GtkLayersWindow()</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="patterns.factory.GtkUIFactory.GtkUIFactory.getMainWindow">
+<code class="descname">getMainWindow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.factory.GtkUIFactory.GtkUIFactory.getMainWindow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">GtkMainWindow()</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="patterns.factory.GtkUIFactory.GtkUIFactory.getToolboxWindow">
+<code class="descname">getToolboxWindow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#patterns.factory.GtkUIFactory.GtkUIFactory.getToolboxWindow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">GtkToolboxWindow()</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="gttoolboxwindow">
+<h2>GtToolboxWindow<a class="headerlink" href="#gttoolboxwindow" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.factory.GtkToolboxWindow.GtkToolboxWindow">
+<em class="property">class </em><code class="descclassname">patterns.factory.GtkToolboxWindow.</code><code class="descname">GtkToolboxWindow</code><a class="headerlink" href="#patterns.factory.GtkToolboxWindow.GtkToolboxWindow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>Window</strong> &#8211; reference of the class Window</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="gtmainwindow">
+<h2>GtMainWindow<a class="headerlink" href="#gtmainwindow" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.factory.GtkMainWindow.GtkMainWindow">
+<em class="property">class </em><code class="descclassname">patterns.factory.GtkMainWindow.</code><code class="descname">GtkMainWindow</code><a class="headerlink" href="#patterns.factory.GtkMainWindow.GtkMainWindow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>Window</strong> &#8211; reference of the class Window</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="gtlayerswindow">
+<h2>GtLayersWindow<a class="headerlink" href="#gtlayerswindow" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.factory.GtkLayersWindow.GtkLayersWindow">
+<em class="property">class </em><code class="descclassname">patterns.factory.GtkLayersWindow.</code><code class="descname">GtkLayersWindow</code><a class="headerlink" href="#patterns.factory.GtkLayersWindow.GtkLayersWindow" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>Window</strong> &#8211; reference of the class Window</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="test">
+<h2>test<a class="headerlink" href="#test" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="patterns.factory.test.main">
+<em class="property">class </em><code class="descclassname">patterns.factory.test.</code><code class="descname">main</code><a class="headerlink" href="#patterns.factory.test.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>test</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Factory</a><ul>
+<li><a class="reference internal" href="#window">Window</a></li>
+<li><a class="reference internal" href="#uifactory">UIFactory</a></li>
+<li><a class="reference internal" href="#qtuifactory">QtUIFactory</a></li>
+<li><a class="reference internal" href="#qttoolboxfactory">QtToolboxFactory</a></li>
+<li><a class="reference internal" href="#qtmainfactory">QtMainFactory</a></li>
+<li><a class="reference internal" href="#qtlayerfactory">QtLayerFactory</a></li>
+<li><a class="reference internal" href="#gtuifactory">GtUIFactory</a></li>
+<li><a class="reference internal" href="#gttoolboxwindow">GtToolboxWindow</a></li>
+<li><a class="reference internal" href="#gtmainwindow">GtMainWindow</a></li>
+<li><a class="reference internal" href="#gtlayerswindow">GtLayersWindow</a></li>
+<li><a class="reference internal" href="#test">test</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Observer.html"
+                        title="previous chapter">Observer Pattern</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Factory.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Observer.html" title="Observer Pattern"
+             >previous</a> |</li>
+        <li><a href="index.html">Python Design Patterns 20141222 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2014, Kanyildiz, Wech.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3b2.
+    </div>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-from factory.Window import Window
+from patterns.factory.Window import Window
 
 __author__ = 'Muhammed5'
 

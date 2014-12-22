@@ -1,6 +1,6 @@
-from strategy.Duck import Duck
-from strategy.FlyNoWay import FlyNoWay
-from strategy.SqueakQuack import SqueakQuack
+from patterns.strategy.Duck import Duck
+from patterns.strategy.FlyNoWay import FlyNoWay
+from patterns.strategy.SqueakQuack import SqueakQuack
 
 __author__ = 'Muhammed5'
 class ModelDuck(Duck):

@@ -1,7 +1,6 @@
-from strategy.Duck import Duck
-from strategy.Fly import Fly
-from strategy.Quack import Quack
-
+from patterns.strategy.Duck import Duck
+from patterns.strategy.Fly import Fly
+from patterns.strategy.Quack import Quack
 
 __author__ = 'Muhammed5'
 class MallardDuck(Duck):

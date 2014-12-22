@@ -1,7 +1,7 @@
-from factory.GtkLayersWindow import GtkLayersWindow
-from factory.GtkMainWindow import GtkMainWindow
-from factory.GtkToolboxWindow import GtkToolboxWindow
-from factory.UIFactory import UIFactory
+from patterns.factory.GtkLayersWindow import GtkLayersWindow
+from patterns.factory.GtkMainWindow import GtkMainWindow
+from patterns.factory.GtkToolboxWindow import GtkToolboxWindow
+from patterns.factory.UIFactory import UIFactory
 
 __author__ = 'Muhammed5'
 class GtkUIFactory(UIFactory):

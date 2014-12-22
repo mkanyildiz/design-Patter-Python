@@ -1,11 +1,14 @@
-from factory.QtLayersWindow import QtLayersWindow
-from factory.QtMainWindow import QtMainWindow
-from factory.QtToolboxWindow import QtToolboxWindow
-from factory.UIFactory import UIFactory
+
 """
 @author: Kanyildiz
 @date: 22.12.2014
 """
+from patterns.factory.QtLayersWindow import QtLayersWindow
+from patterns.factory.QtMainWindow import QtMainWindow
+from patterns.factory.QtToolboxWindow import QtToolboxWindow
+from patterns.factory.UIFactory import UIFactory
+
+
 class QtUIFactory(UIFactory):
     """
     QtUIFactory
