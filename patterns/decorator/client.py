@@ -4,7 +4,11 @@ from patterns.decorator.Salat import Salat
 from patterns.decorator.Steak import Steak
 from patterns.decorator.WienerSchnitzel import WienerSchnitzel
 __author__ = 'mwech'
-
+"""
+@author: Maximilian Wech
+@version: 20141222
+@description: Main
+"""
 schnitzel = WienerSchnitzel()
 print(schnitzel.getBezeichnung() + ": €" + str(schnitzel.getPreis()))
 

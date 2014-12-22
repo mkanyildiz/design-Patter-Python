@@ -1,8 +1,13 @@
 from abc import ABCMeta, abstractmethod
 from patterns.observer.Observer import Thermometer
 from patterns.observer.Subject import Wetterstation
-
 __author__ = 'mwech'
+"""
+@author: Maximilian Wech
+@version: 20141222
+@description: Main
+"""
+
 
 if __name__ == "__main__":
     wetterstation = Wetterstation()
