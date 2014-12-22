@@ -1,0 +1,1 @@
+Search.setIndex({objects:{},titleterms:{factori:0,indic:0,document:0,tabl:0,welcom:0},titles:["Welcome to Factory&#8217;s documentation!"],filenames:["index"],objtypes:{},objnames:{},envversion:43,terms:{index:0,modul:0,page:0,content:0,search:0}})
