@@ -4,7 +4,15 @@ from strategy.SqueakQuack import SqueakQuack
 
 __author__ = 'Muhammed5'
 class ModelDuck(Duck):
+    """
+    ModelDuck
+    :param Duck:reference of the Duck class
+    """
     def __init__(self):
+        """
+
+        :return: nothing
+        """
         Duck.__init__(self)
         fly_no_way_instance = FlyNoWay()
         self._fly_behavior = fly_no_way_instance

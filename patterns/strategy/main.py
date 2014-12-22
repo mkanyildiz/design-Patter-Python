@@ -4,7 +4,14 @@ from strategy.MallardDuck import MallardDuck
 from strategy.ModelDuck import ModelDuck
 
 class main():
-     def __init__(self):
+    """
+    main class
+    """
+    def __init__(self):
+        """
+
+        :return: nothing
+        """
         if __name__ == "__main__":
             print('#'*80)
             print("Mallard Duck")

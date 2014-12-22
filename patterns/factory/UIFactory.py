@@ -2,12 +2,25 @@ __author__ = 'Muhammed5'
 import abc
 # Abstract factory class
 class UIFactory:
+    """
+    UIFactory
+    """
     __metaclass__ = abc.ABCMeta
     @abc.abstractmethod
-    def getToolboxWindow(self): pass
+    def getToolboxWindow(self):
+        """
+        :return: nothing
+        """
+        pass
 
-    @abc.abstractmethod
-    def getLayersWindow(self): pass
+    def getLayersWindow(self):
+        """
+        :return: nothing
+        """
+        pass
 
-    @abc.abstractmethod
-    def getMainWindow(self): pass
+    def getMainWindow(self):
+        """
+        :return: nothing
+        """
+        pass

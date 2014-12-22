@@ -4,6 +4,9 @@ from factory.QtUIFactory import QtUIFactory
 
 
 class test:
+    """
+    test
+    """
     if __name__ == "__main__":
         gnome = True
         kde = not gnome
@@ -21,6 +24,6 @@ class test:
 
         # Let's see what have we recieved
         print("%s:%s" % (toolbox.getToolkit(), toolbox.getType()))
-        print ("%s:%s" % (layers.getToolkit(), layers.getType()))
-        print ("%s:%s" % (main.getToolkit(), main.getType()))
+        print("%s:%s" % (layers.getToolkit(), layers.getType()))
+        print("%s:%s" % (main.getToolkit(), main.getType()))
  

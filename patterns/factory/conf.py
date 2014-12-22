@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Factory documentation build configuration file, created by
-# sphinx-quickstart on Mon Dec 22 13:29:03 2014.
+# factory documentation build configuration file, created by
+# sphinx-quickstart on Mon Dec 22 15:52:30 2014.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Factory'
+project = 'factory'
 copyright = '2014, Kanyildiz'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -54,7 +54,7 @@ copyright = '2014, Kanyildiz'
 # built documents.
 #
 # The short X.Y version.
-version = '1.0'
+version = '1'
 # The full version, including alpha/beta/rc tags.
 release = '1'
 
@@ -179,7 +179,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Factorydoc'
+htmlhelp_basename = 'factorydoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -199,7 +199,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'Factory.tex', 'Factory Documentation',
+  ('index', 'factory.tex', 'factory Documentation',
    'Kanyildiz', 'manual'),
 ]
 
@@ -229,7 +229,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'factory', 'Factory Documentation',
+    ('index', 'factory', 'factory Documentation',
      ['Kanyildiz'], 1)
 ]
 
@@ -243,8 +243,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'Factory', 'Factory Documentation',
-   'Kanyildiz', 'Factory', 'One line description of project.',
+  ('index', 'factory', 'factory Documentation',
+   'Kanyildiz', 'factory', 'One line description of project.',
    'Miscellaneous'),
 ]
 

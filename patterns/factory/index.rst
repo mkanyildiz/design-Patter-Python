@@ -1,9 +1,9 @@
-.. Factory documentation master file, created by
-   sphinx-quickstart on Mon Dec 22 13:29:03 2014.
+.. factory documentation master file, created by
+   sphinx-quickstart on Mon Dec 22 15:52:30 2014.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Factory's documentation!
+Welcome to factory's documentation!
 ===================================
 
 Contents:
@@ -11,6 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   code.rst
 
 
 Indices and tables
